@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  background-color: #000000;
+  font-family: 'Teko', sans-serif;
+}
+
+.title {
+  width: 100%;
+  padding: 5vh 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f5b07d;
+}
+
+.calculator {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #f0edeb;
+  border-radius: 5px;
+}
+
+/* SCREEN OUTPUT */
+.beautiful_screen {
+  width: 90%;
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  text-align: right;
+}
+.beautiful_screen_previous {
+  color: #00000070;
+  height: 40px;
+  font-size: clamp(26px, 10vw, 32px);
+}
+.beautiful_screen_current {
+  color: #00000090;
+  height: 40px;
+  font-size: clamp(30px, 10vw, 36px);
+}
+
+button {
+  width: 30%;
+  height: 45px;
+  margin-bottom: 10px;
+  font-size: clamp(20px, 10vw, 28px);
+  font-family: 'Teko', sans-serif;
+  cursor: pointer;
+}
+
+/* NUMBERS AND OPERATIONS BUTTONS */
+.calculator_digit {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.number_button {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.btn_number {
+  background-color: #db9c70;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -3px 3px 1px #c98d63;
+}
+.operation_button {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.btn_operation {
+  width: 90%;
+  background-color: #f5c49f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 1px #f5b07d;
+}
+
+/* EQUAL AND DEL BUTTONS */
+.calculator_btn {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.del_button {
+  width: 30%;
+  background-color: #f5dece;
+  color: #e8813a;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 1px #f5d1b8;
+}
+.equal_btn {
+  width: 60%;
+  margin-right: 5%;
+  background-color: #f5c49f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -3px 3px 1px #f5b07d;
+}
+
+/* ASIDE WHEN ITS OVER 9000 */
+.aside_over_nine_thousand {
+  width: 80%;
+  max-width: 300px;
+  height: 200px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #FFFFFF;
+}
+.aside_close {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  cursor: pointer;
+}
+.aside_close p {
+  width: 30px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #706e6e90;
+}
+.aside_text {
+  margin-top: 50px;
+  padding: 0 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* BUTTON SAVE */
+.save_db {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save_db button {
+  width: 70%;
+  background-color: #f5c49f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  box-shadow: -3px 3px 1px #f5b07d;
+}
+
+/* DATA RESULT */
+.data_result {
+  height: 80vh;
+  width: 80%;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  border-radius: 5px;
+  background-color: #f5b07d;
+  color: white;
+}
+
+/* DATA BUTTON */
+.data_button {
+  display: block;
+  margin: 20px auto 0 auto;
+  background-color: #f0edeb;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset 5px 5px 10px #00000080;
+}
